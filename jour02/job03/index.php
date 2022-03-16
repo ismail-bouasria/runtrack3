@@ -8,6 +8,10 @@
     <script src="index.js"></script>
 </head>
 <body>
-    
+    <article>
+        <p id='compteur'> 0 </p>
+    </article>
+
+    <button>bouton</button>
 </body>
 </html>

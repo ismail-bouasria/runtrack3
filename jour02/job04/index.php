@@ -8,6 +8,7 @@
     <script src="index.js"></script>
 </head>
 <body>
+    <input d="keylogger" type="textarea">
     
 </body>
 </html>

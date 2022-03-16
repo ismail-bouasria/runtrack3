@@ -1,20 +1,28 @@
-
-'use strict';
-
- var annee = '';
-
- function bisextil(annee) {
-
-    if (annee % 4 == 0 && annee % 100 !=0 || annee % 400 == 0) {
-        
-        return true;
-        
-    }else{
+'user strict';
+ 
+document.addEventListener('DOMContentLoaded', function loaded(){
+    
+   
+       var textArea = document.querySelector('#keylogger');
        
-        return false;
-    }
-     
-}
+       document.addEventListener('keydown',()=>{
 
-console.log(bisextil('2000'));
-console.log(bisextil('1999'));
+        keydown = textArea.onkeydown
+
+        if (keydown) {
+            textArea.innerHTML++;
+        }
+       
+       
+
+        console.log({textArea});
+
+
+
+       })
+       
+        
+
+         
+
+})

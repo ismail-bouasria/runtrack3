@@ -3,25 +3,24 @@
    
 
 
+document.addEventListener('DOMContentLoaded', function loaded(){
     
-    var button = document.getElementById("button");
-        
-        
-    button.addEventListener("click", showhide => {
+    var button = document.querySelector('button'),
+        article = document.querySelector('article');
+        function showhide(){
 
-        document.querySelector('article').classList.toggle("hidden")
+            let result = article.classList.toggle("article");
 
-      /*if(getComputedStyle(article).display == "none"){
-        
-        article.style.display = "block";
-        
-      } else {
-        article.style.display = "none";
-        
-      }
-      console.log(article.style.display);*/
-       
-    })
+            if (result) {
+                article.style.display = 'none';
+            } else {
+                article.style.display = 'block';
+            }
+            
+            
     
+        }
+    button.addEventListener('click',showhide);
 
+})
     

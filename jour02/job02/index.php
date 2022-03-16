@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="index.js"></script>
-    
+    <style> article { 
+        display: none;
+    } </style>
 </head>
 <body>
     <button id = "button" >Show/hide</button>
 
-    <article id ="article" >
+    <article>
         <p>
         L'important n'est pas la chute, mais l'atterrissage.
         </p>
